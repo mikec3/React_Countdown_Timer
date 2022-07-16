@@ -1,23 +1,21 @@
+//https://blog.greenroots.info/how-to-create-a-countdown-timer-using-react-hooks
+
 import logo from './logo.svg';
 import './App.css';
+import CountdownTimer from './CountdownTimer.js'
 
 function App() {
+
+  const timeInSeconds = 117*1000;
+  const NOW_IN_MS = new Date().getTime();
+
+  const dateTimeAfter117Seconds = NOW_IN_MS + timeInSeconds;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1> Countdown Timer </h1>
+      <CountdownTimer targetDate={dateTimeAfter117Seconds}/>
+
     </div>
   );
 }

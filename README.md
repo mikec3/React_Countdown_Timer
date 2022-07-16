@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# React Countdown Timer
+
+# Copied almost every line from this article: https://blog.greenroots.info/how-to-create-a-countdown-timer-using-react-hooks
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
